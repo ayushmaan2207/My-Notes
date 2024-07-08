@@ -16,7 +16,7 @@ function App() {
   const [n, setN] = useState("00");
   const [i, setI] = useState("00");
   const [u, setU] = useState("00");
-  const dark=[".App",".line",".card",".nbtag",".inpcont",".inpt",".nothing",".add"]
+  const dark=[".App",".line",".card",".nbtag",".inpcont",".inpt",".nothing",".add"];
 
   useEffect(()=>{
     if(toggled){

@@ -5,7 +5,21 @@
     gap: 10px;
     overflow: auto;
     flex-wrap: wrap;
-    padding-top: 5px;
+    margin-top: 10px;
+}
+.box::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.box::-webkit-scrollbar-track {
+    background: rgb(104, 104, 104);   /* color of the tracking area */
+    border-radius: 20px;  
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;      
+    border: 3px solid rgb(104, 104, 104);
 }
 .card{
     cursor: pointer;
