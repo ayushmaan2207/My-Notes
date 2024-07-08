@@ -16,6 +16,24 @@ function App() {
   const [n, setN] = useState("00");
   const [i, setI] = useState("00");
   const [u, setU] = useState("00");
+  const dark=[".App",".line",".card",".nbtag",".inpcont",".inpt",".nothing",".add"]
+
+  useEffect(()=>{
+    if(toggled){
+      dark.forEach(ele => {
+        document.querySelectorAll(ele).forEach(e=>{
+          e.classList.add("dark");
+        });
+      });
+    }
+    else{
+      dark.forEach(ele => {
+        document.querySelectorAll(ele).forEach(e=>{
+          e.classList.remove("dark");
+        });
+      });
+    }
+  },[toggled,notes,activeTag]);
 
   useEffect(() => {
     let carr = [0, 0, 0];
@@ -129,7 +147,7 @@ function App() {
             <div className="thumb">{toggled ? <MdSunny />:<FaMoon />}</div>
           </button>
         </div>
-        <AddNotes addn={addnote}></AddNotes>
+        <AddNotes className="inpcon" addn={addnote}></AddNotes>
         <Notes shownotes={filteredNotes()} del={remove} />
       </div>
     </div>

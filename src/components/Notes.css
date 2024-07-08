@@ -28,7 +28,7 @@
     align-items: center;
 }
 .nbtag{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 13px;
     padding:3px 5px;
     border-radius: 5px;
@@ -39,19 +39,47 @@
 }
 
 .Normal{
-    background-color: rgba(149, 208, 22, 0.3);
+    background-color: rgba(149, 208, 22, 0.5);
+}
+.Normal.dark{
+    background-color: rgb(132, 184, 20);
 }
 .Important{
-    background-color: rgba(255, 173, 77, 0.3);
+    background-color: rgba(255, 173, 77, 0.5);
+}
+.Important.dark{
+    background-color: rgb(218, 139, 49);
 }
 .Urgent{
-    background-color: rgba(149, 117, 217, 0.3);
+    background-color: rgba(149, 117, 217, 0.5);
 }
+.Urgent.dark{
+    background-color: rgb(131, 104, 192);
+}
+
+
+#Normal.dark{
+    color: rgb(132, 184, 20);
+    background-color: #fff;
+}
+
+#Important.dark{
+    color: rgb(218, 139, 49);
+    background-color: #fff;
+
+}
+#Urgent.dark{
+    color: rgb(131, 104, 192);
+    background-color: #fff;
+
+}
+
 .delete{
     font-size:25px;
+    color: black;
     filter: opacity(70%);
-    /* display: none; */
 }
+/* argr js mai change kro to */
 .delact{
     display: block;
 }
@@ -60,4 +88,7 @@
     font-size: 20px;
     margin: 3%;
     padding: 7px 20px;
+}
+.nothing.dark{
+    color: rgba(255, 255, 255, 0.7);
 }
